@@ -13,7 +13,7 @@ import {RouterOutlet} from "@angular/router";
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
   imports: [
     CommonModule,
