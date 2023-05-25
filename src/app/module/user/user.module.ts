@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {UserRoutingModule} from "./user-routing.module";
 import {LayoutModule} from "./layout/layout.module";
 import {HomepageModule} from "./homepage/homepage.module";
+import {ShopModule} from "./shop/shop.module";
 
 
 
@@ -14,6 +15,7 @@ import {HomepageModule} from "./homepage/homepage.module";
     CommonModule,
     LayoutModule,
     HomepageModule,
+    ShopModule,
     UserRoutingModule
   ]
 })
