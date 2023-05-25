@@ -4,7 +4,7 @@ import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import {RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 
 
@@ -15,9 +15,10 @@ import {RouterOutlet} from "@angular/router";
     FooterComponent,
     SidebarComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterOutlet
-  ]
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        RouterLink
+    ]
 })
 export class LayoutModule { }
