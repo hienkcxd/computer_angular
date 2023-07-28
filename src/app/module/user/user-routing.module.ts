@@ -7,6 +7,10 @@ import {CpuShopComponent} from "./cpu/cpu-shop/cpu-shop.component";
 import {CpuDetailComponent} from "./cpu/cpu-detail/cpu-detail.component";
 import {CpuIntelComponent} from "./cpu/cpu-intel/cpu-intel.component";
 import {CpuAmdComponent} from "./cpu/cpu-amd/cpu-amd.component";
+import {VgaRxComponent} from "./vga/vga-rx/vga-rx.component";
+import {VgaDetailComponent} from "./vga/vga-detail/vga-detail.component";
+import {VgaRtxComponent} from "./vga/vga-rtx/vga-rtx.component";
+import {VgaShopComponent} from "./vga/vga-shop/vga-shop.component";
 
 const routes: Routes = [
   {path:"", redirectTo: "user/homepage", pathMatch: "full"},
@@ -32,6 +36,18 @@ const routes: Routes = [
           {path: "amd", children:[
               {path: "", component:CpuAmdComponent},
               {path: "detail", component:CpuDetailComponent, pathMatch: "full"},
+            ]},
+        ]},
+      {path: "vga", children:[
+          {path: "", component:VgaShopComponent},
+          {path: "detail", component:VgaDetailComponent, pathMatch: "full"},
+          {path: "rtx", children:[
+              {path: "", component:VgaRtxComponent},
+              {path: "detail", component:VgaDetailComponent, pathMatch: "full"},
+            ]},
+          {path: "rx", children:[
+              {path: "", component:VgaRxComponent},
+              {path: "detail", component:VgaDetailComponent, pathMatch: "full"},
             ]},
         ]},
     ]},
